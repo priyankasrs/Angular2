@@ -1,0 +1,59 @@
+<!-- 
+	<div class="container-fluid" ng-controller="BuyTicketsCtrl">
+	 	
+		<div class="container col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<div class="container">
+			  <h3>{{CurrentSelectedMovie.m_name}}</h3>
+			  <ul class="nav nav-pills">
+			    <li ng-repeat="x in CurrentSelectedMovie.m_date">
+			    	<a ng-click="getSelectedDatesShow(x);">{{x}}</a>
+			    </li>
+			  </ul>
+			</div><br/>
+			<table class="table table-striped">
+			      <tr ng-repeat="y in CurrentMovieShows.show_details">
+			      	<td>
+			      		{{y.c_name}}</td>
+			      	<div ng-class="{'myShowHideDiv': show == true,'myShowHideDiv2': show == false}">
+			      		<h4 style="text-align: center;">{{rs}}{{price}}{{rse}}</h4>
+			      		<h6 style="text-align: center;margin-bottom: 12px;">{{availability}}</h6><p></p>
+			      	</div>
+			      	<td> 
+				    	<span ng-repeat="z in y.timing"> <a ng-mouseenter="showShowPrice(z);" ng-mouseleave="hideShowPrice();" ng-click="showShowPrice(z);DatesShows2();getSelectedCinema(y);selectSeat(z);" href="#seatselection">{{z}}</a> </span>
+				      	</td>
+			      </tr>
+			 </table>	
+		</div>
+	</div> -->
+
+
+	<div class="container" >
+	 	<!-- Main Block -->
+		<div class="container col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-controller="BuyTicketsCtrl">
+			<div class="container">
+			  <h3>
+			  	<span class="fa fa-film" aria-hidden="true"></span>
+			  	  {{CurrentSelectedMovie.m_name}}
+			  </h3>
+			  <ul class="nav nav-pills">
+			    <li ng-repeat="x in CurrentSelectedMovie.m_date">
+			    	<a ng-bind="formatDate(x) |  date:'dd, MMM'" ng-click="getSelectedDatesShow(x);" ng-class="{'active':check}"><i class="fa fa-calendar-plus-o" aria-hidden="true"></i>{{x}}</a>
+			    </li>
+			  </ul>
+			</div><br/>
+			<table class="table table-striped">
+			      <tr ng-repeat="y in CurrentMovieShows.show_details">
+			      	<td>{{y.c_name}}</td>
+			      	<div ng-class="{'myShowHideDiv': show == true,'myShowHideDiv2': show == false}">
+			      		<h4 style="text-align: center;">{{rs}}{{price}}{{rse}}</h4>
+			      		<h6 style="text-align: center;margin-bottom: 12px;">{{availability}}</h6><p></p>
+			      	</div>
+			      	<td> 
+				    	<span ng-repeat="z in y.timing"> 
+				    		<a ng-mouseenter="showShowPrice(z);" ng-mouseleave="hideShowPrice();" ng-click="showShowPrice(z);DatesShows2();getSelectedCinema(y);selectSeat(z);" href="#seatselection"> {{z}} </a> 
+				    	</span>
+				      	</td>
+			      </tr>
+			 </table>	
+		</div>
+	</div>

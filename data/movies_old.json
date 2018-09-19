@@ -1,0 +1,105 @@
+{
+    "Movies" : [
+    {
+    	"m_id" : 1,
+    	"m_name" : "Jolly LLB 2",
+    	"m_thumb" : "./images/jolly_llb_2.jpg",
+        "runningTheaters":[
+            {
+                "c_id" : "1",
+                "showDetails" : [
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            },
+            {
+                "c_id":"2",
+                "showDetails":[
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            },
+            {
+                "c_id":"3",
+                "showDetails":[
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            }
+        ],
+    	"m_desc" : "Inspired by true events that has happened in India, the sequel to the national award winning film Jolly LLB will see Jolly take up a huge case where he will fight against the corrupt and the powerful. The fight for what is right will not be an easy one for Jolly as he will realise he will be the last man standing up for justice against injustice."
+    },
+    {
+    	"m_id" : 2,
+    	"m_name" : "OK Janu",
+    	"m_thumb" : "./images/ok_janu.jpg",
+        "runningTheaters":[
+            {
+                "c_id":"4",
+                "showDetails":[
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            },
+            {
+                "c_id":"3",
+                "showDetails":[
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            }
+        ],
+    	"m_desc" : "Adi (ARK) & Tara (Shraddha Kapoor) move to Mumbai to pursue their dreams. A chance meeting sparks off a heady, no strings attached romance until their careers pull them apart. Will ambition prevail over matters of the heart?"
+    },
+    {
+    	"m_id" : 3,
+    	"m_name" : "Raees",
+    	"m_thumb" : "./images/raees.jpg",
+        "runningTheaters":[
+            {
+                "c_id":"2",
+                "showDetails":[
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            },
+            {
+                "c_id":"3",
+                "showDetails":[
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            }
+        ],
+    	"m_desc" : "Raees is set in the early 80's and 90's in Gujarat, India. It is a fictitious story of a man, Raees, who builds an entire empire from the scratch. It's a story about his rise and his relationships, which help him become the single most powerful man in the state."
+    },
+    {
+    	"m_id" : 4,
+    	"m_name" : "Kaabil",
+    	"m_thumb" : "./images/kabil.jpg",
+        "runningTheaters":[
+            {
+                "c_id":"4",
+                "showDetails":[
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            },
+            {
+                "c_id":"2",
+                "showDetails":[
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            },
+            {
+                "c_id":"3",
+                "showDetails":[
+                    {"date":"08-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]},
+                    {"date":"09-02-2017","timing":["09:00 AM", "11:50 AM", "02:15 PM", "04:45 PM", "09:45 PM"]}   
+                ]
+            }
+        ],
+    	"m_desc" : "Rohan, 31, is a dubbing artist. His days are spent in the studio, nights at home. In today's complex world, Rohan is a simple man with one dream -- to lead a normal life and in time, to find someone with whom he can build a happy home. His journey leads him to meet the independent and level-headed Supriya."
+    } ]
+}
