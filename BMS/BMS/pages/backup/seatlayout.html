@@ -1,0 +1,54 @@
+<link rel="stylesheet" type="text/css" href="./seatselection.css">
+<div class="container-fluid" ng-controller="SeatSelectionCtrl" ng-init="checkBlocked();">
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		<!-- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" style=""> -->
+			<h2></h2>
+		  	<center>
+		  		
+		  		<div class="myDiv">
+				    <div class="inner" style="float: left;">
+				    	<h4>{{showTime.name}}</h4>
+						<h5>{{showTime.cinema}}</h5>
+				    </div>
+				    <div class="inner" style="float: left;">
+				    	
+				    	<h5>
+				    		<span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+				    		Date : {{showTime.date}}
+				    	</h5>
+				    	<h5>Showtime : {{showTime.time}}</h5>
+				    </div>
+				    <div class="inner" style="float: right;">
+				    	<h5>Price : {{showTime.price}}</h5>
+				    	
+				    </div>
+				</div>
+		  		
+		  		<div class="form-group">
+			      <label for="sel1" style="float: left;margin: 1%;">No of Seats :</label>
+			      <select class="form-control" id="sel1" style="width: 80%;margin: 1% 1% 1% -1%;margin-left: -100px;" ng-model="selectedVal" ng-options="i for i in quantities">
+			      </select>
+			    </div>
+
+		  	</center>
+		    
+		    <div class="table-responsive">
+		      <table class="table">
+		        <tbody class="table">
+		          <tr ng-repeat="row in rows">
+		            <span>{{rowLetter[$index]}}</span>
+		            <td style="margin:2px;" ng-repeat="item in row" class="available" ng-disabled="isDisabled" ng-class="{'selected': item.check == true,'available': item.check == false, 'blocked': item.seat == true }" ng-click="clickSeat(item)">
+		              {{item.val}}
+		            </td>
+		          </tr>
+		        </tbody>
+		      </table>
+
+		      <center>
+		      	<button type="button" class="btn btn-success" ng-click="pay(showTime);">Proceed to Pay</button>
+		      </center>
+		      <hr/><br/>
+			</div>
+		</div>
+	<!-- </div> -->
+</div>

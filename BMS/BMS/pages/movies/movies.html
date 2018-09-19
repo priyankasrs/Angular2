@@ -1,0 +1,180 @@
+<script src="./js/carousel.js"></script>
+<div  ng-controller="MoviesCtrl">
+	<div class="well-searchboxM">
+		<div class="row">    
+			<div class="col-sm-8 col-xs-offset-2">
+				<input type="text" ng-model="searchitem" class="form-control" name="x" placeholder="Search for Movies..." >
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			  <br>
+			  <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel2" data-slide-to="1"></li>
+			      <li data-target="#myCarousel2" data-slide-to="2"></li>
+			      <li data-target="#myCarousel2" data-slide-to="3"></li>
+			      <li data-target="#myCarousel2" data-slide-to="4"></li>
+			    </ol>
+
+			    <!-- Wrapper for slides -->
+			    <div class="carousel-inner" role="listbox">
+			      <div class="item active">
+			        <img src="./images/s_raees.jpg" alt="Chania" width="460" height="345">
+			        <div class="carousel-caption d-none d-md-block">
+					    <h3>Raees</h3>
+					    <p>Story of Gujrat's Business and Crime World.</p>
+				  	</div>
+			      </div>
+
+			      <div class="item">
+			        <img src="./images/s_kaabil.jpg" alt="Chania" width="460" height="345">
+			        <div class="carousel-caption d-none d-md-block">
+					    <h3>Kaabil</h3>
+					    <p>Tragedy happened in Love Story of 2 Blind People.</p>
+				  	</div>
+			      </div>
+			    
+			      <div class="item">
+			        <img src="./images/s_kung_fu_yoga.jpg" alt="Flower" width="460" height="345">
+			        <div class="carousel-caption d-none d-md-block">
+					    <h3>Kung Fu Yoga</h3>
+					    <p>Treasure Hunt by Archaeology Professor.</p>
+				  	</div>
+			      </div>
+
+			      <div class="item">
+			        <img src="./images/s_tgws.jpg" alt="Flower" width="460" height="345">
+			        <div class="carousel-caption d-none d-md-block">
+					    <h3>The Great Wall</h3>
+					    <p>Epic historical fiction action-adventure.</p>
+				  	</div>
+			      </div>
+
+			       <div class="item">
+			        <img src="./images/jolly_showcase.jpg" alt="Flower" width="460" height="345">
+			        <div class="carousel-caption d-none d-md-block">
+					    <h3>Jolly LLB 2</h3>
+					    <p>Actual Truth of Indian Judiciary System</p>
+				  	</div>
+			       </div>
+			    </div>
+
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" data-target="#myCarousel2" role="button" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" data-target="#myCarousel2" role="button" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="row">
+
+		<div class="col-sm-3">
+			<ul class="list-group">
+			  <li class="list-group-item">
+				<h4 data-toggle="collapse" data-target="#group-1">
+					<i class="fa fa-fw fa-caret-down parent-expanded"></i>
+						Language
+				</h4>
+				<div id="group-1" class="list-group collapse in"> 
+					<br/><input type="radio" ng-model="myVar"  value="" > None </input>
+					<br/><input type="radio" ng-model="myVar"  value="Hindi" > Hindi </input>
+					<br/><input type="radio" ng-model="myVar" value="English" > English </input>
+					<br/><input type="radio" ng-model="myVar" value="Tamil" > Tamil </input>
+					<br/><input type="radio" ng-model="myVar" value="Telgu" > Telgu </input>
+				</div>
+			  </li>
+			  <li class="list-group-item">
+			  	<h4 data-toggle="collapse" data-target="#group-2">
+					<i class="fa fa-fw fa-caret-down parent-expanded"></i>
+					Genre
+				</h4>
+				<div id="group-2" class="list-group collapse in">
+					
+					<br/><input type="radio" ng-model="myVar1"  value="" > None </input>
+					<br/><input type="radio" ng-model="myVar1"  value="Comedy" > Comedy</input>
+
+					<br/><input type="radio" ng-model="myVar1" value="Action" ng-change="sendSelectedFilter1(myVar1);"> Action </input>
+					<br/><input type="radio" ng-model="myVar1" value="Drama" ng-change="sendSelectedFilter1(myVar1);"> Drama </input>
+					<br/><input type="radio" ng-model="myVar1" value="Romance" > Romance </input>
+					<br/><input type="radio" ng-model="myVar1" value="Crime" > Crime</input>
+					<br/><input type="radio" ng-model="myVar1" value="Thriller" > Thriller</input>
+					<br/><input type="radio" ng-model="myVar1" value="Biopic" > Biopic</input>
+				</div>
+			  </li>
+			</ul>
+		</div>
+
+		<div class="col-sm-9"  >
+			<div class="row">
+				<div class="col-sm-3" ng-repeat="m in temp | filter :{m_name:searchitem,m_lang:myVar, m_genre:myVar1}">
+
+					<div class="thumbnail" id="ex1">
+						<div class="hovereffect">
+							<img class="img-responsive zoom" ng-src="{{m.m_thumb}}" style="height: 250px;width:100%;">
+							<div class="overlay" data-toggle="modal" class="img-responsive zoom" data-target="#myModal" ng-click="showModal(m)" style="top:10px;">
+								<a class="info"><img src="./images/info.png"></img></a>
+							</div>
+						</div>
+						<div class="caption">
+							<div class="row">
+								<div style="min-height:50px;margin:2%;">
+									<h4 class="truncate" >{{m.m_name}}</h4>
+								</div>
+
+							</div>
+							<center>
+								<a class="btn btn-lg btn-danger" style="border-radius:0;width:98%;bottom:0;" ui-sref="buyTickets" ng-click="setCurrentSelectedMovie(m);">
+									Book Now
+								</a>
+							</center>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+				
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">{{selectedMovie.m_name}}</h4>
+				</div>
+				
+				<div class="modal-body img-responsive">
+					<img class="img-responsive" ng-src="{{selectedMovie.m_fullimg}}" alt="not found" style="width: 100%; height:50%;" />
+					<font size:10px><b>Lang:{{selectedMovie.m_lang}}</b></font></br>
+					<b>Description:</b>{{selectedMovie.m_desc}}
+					<div ng-repeat="l in selectedMovie.m_loc | filter:city">
+						<center><b>Ticketes available in your city!</b></center>
+					</div>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		<script type="text/javascript">
+			$.fn.ready(function() {
+				$('.form-control').fitText();
+			});
+			$.fn.ready(function() {
+				$('.modal-body').fitText();
+			});
+		</script>

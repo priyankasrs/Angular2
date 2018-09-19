@@ -1,0 +1,57 @@
+<!-- NOT USING THIS FILE -->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="bysApp">
+<head>
+	<meta charset="UTF-8">
+	<title>BYS</title>
+	<!-- <base href="/" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/BYS_logo.jpg">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/web1.css"> 	
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+</head>
+<body bgcolor="#F7F7F7">
+	
+	<nav class="navbar navbar-inverse" style="border-radius:0;">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" ui-sref="home">
+			<span>
+	      		<img class="img-responsive2" src="images/BYS_logo.jpg" height="50" width="50">BookYourShow
+	      	</span>	
+	      </a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+			<li class="dropdown" style="z-index: 200;">
+		    	<a id="dropdownDivID" class="dropdown-toggle" data-toggle="dropdown">
+		    		<span class="glyphicon glyphicon-map-marker">
+		    		</span>  Location <span class="caret"></span>
+		    	</a>
+		       	<ul id="cityDivID" class="dropdown-menu">
+		       	  <li><a ui-sref="movies">Chennai</a></li>
+		       	  <li><a ui-sref="movies">Delhi</a></li>
+				  <li><a ui-sref="movies">Bangalore</a></li>
+				  <li><a ui-sref="movies">Mumbai</a></li>
+				</ul>
+			</li>
+	        <li></li>
+		    <li><a ui-sref="movies">Movies</a></li>
+		    <li><a ui-sref="cinemas">Cinemas</a></li>
+		    <li><a ui-sref="bookinghistory">Booking History</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<link rel="stylesheet" type="text/css" href="css/seatselection.css">
+<div class="container" ng-controller="SeatSelectionCtrl" ng-init="checkBlocked();" style="margin-top: 5%;">
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		<!-- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" style=""> -->
+			<h2></h2>
+		  	<center>
+		  		
+		  		<div class="myDiv">
+				    <div class="inner" style="float: left;">
+				    	<h4>{{showTime.name}}</h4>
+						<h5>{{showTime.cinema}}</h5>
+				    </div>
+				    <div class="inner" style="float: left;">
+				    	
+				    	<h5>
+				    		<span><i class="fa fa-calendar-check-o" aria-hidden="true"></i></span>
+				    		Date : {{showTime.date}}
+				    	</h5>
+				    	<h5>Showtime : {{showTime.time}}</h5>
+				    </div>
+				    <div class="inner" style="float: right;">
+				    	<h5>Price : {{showTime.price}}</h5>
+				    	
+				    </div>
+				</div>
+		  		
+		  		<div class="form-group">
+			      <label for="sel1" style="margin: auto;">No of Seats :</label>
+			      <select class="form-control" id="sel1" style="width: 80%;margin: auto;" ng-model="selectedVal" ng-options="i for i in quantities">
+			      </select>
+			    </div>
+
+		  	</center>
+		    
+		<div class="table-responsive">
+	      <table class="table table-responsive">
+	        <tbody class="table">
+	          <tr ng-repeat="row in rows">
+	            <span>{{rowLetter[$index]}}</span>
+	            <td style="margin:2px;" ng-repeat="item in row" class="available" ng-disabled="isDisabled" ng-class="{'selected': item.check == true,'available': item.check == false, 'blocked': item.seat == true }" ng-click="clickSeat(item)" style="color: black;"><b style="margin-left: 28%;">
+	              {{item.val}}</b>
+	            </td>
+	          </tr>
+	        </tbody>
+	      </table>
+				
+			<div class="row">
+				<div class="col-xs-3">
+					<img src="./images/door.png" alt="Exit" style="margin-left:2%;height: 25%;width: 25%;">
+				</div>
+				<div class="col-xs-6">
+					<img src="./images/screen.png" alt="Exit" style="margin-top:3%;height: 100%;width: 100%;">
+				</div>
+				<div class="col-xs-3">
+					<img src="./images/door.png" alt="Exit" style="float:right;height: 25%;width: 25%;">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-2">
+					<div class="row form-group">
+						<div class="col-sm-9">
+							<input type="text" ng-model="Coupon" placeholder="Enter Coupon.." class="form-control">
+						</div>
+						<div class="col-sm-2">
+							<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModalSeat" ng-click="apply();">Apply</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<button type="button" class="btn btn-success" ng-click="pay(showTime);">Proceed to Pay</button>
+					
+					<hr/><br/>
+					<div class="modal fade" id="myModalSeat" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title text-center">Coupon</h4>
+								</div>
+
+								<div class="modal-body">
+									{{msg}}
+								</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+
+							
+		</div>
+	<!-- </div> -->
+</div>
