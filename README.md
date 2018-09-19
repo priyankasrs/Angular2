@@ -1,2 +1,1 @@
-# Angular2
-Movie booking page
+# Movie booking site using AngularJS
