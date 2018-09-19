@@ -1,0 +1,75 @@
+{
+    "Movies" :
+    [
+        {
+        	"m_id" : 1,
+    		"m_date" : ["09-02-2017","10-02-2017","11-02-2017"],
+        	"m_name" : "Jolly LLB 2",
+        	"m_thumb" : "./images/jolly_llb_2.jpg",
+        	"m_desc" : "Inspired by true events that has happened in India, the sequel to the national award winning film Jolly LLB will see Jolly take up a huge case where he will fight against the corrupt and the powerful. The fight for what is right will not be an easy one for Jolly as he will realise he will be the last man standing up for justice against injustice."
+        },
+        {
+        	"m_id" : 2,
+        	"m_name" : "OK Janu",
+        	"m_date" : ["09-02-2017","10-02-2017","11-02-2017"],
+            "m_thumb" : "./images/ok_janu.jpg",
+        	"m_desc" : "Adi (ARK) & Tara (Shraddha Kapoor) move to Mumbai to pursue their dreams. A chance meeting sparks off a heady, no strings attached romance until their careers pull them apart. Will ambition prevail over matters of the heart?"
+        },
+        {
+        	"m_id" : 3,
+        	"m_name" : "Raees",
+            "m_date" : ["09-02-2017","10-02-2017","11-02-2017"],
+        	"m_thumb" : "./images/raees.jpg",
+        	"m_desc" : "Raees is set in the early 80's and 90's in Gujarat, India. It is a fictitious story of a man, Raees, who builds an entire empire from the scratch. It's a story about his rise and his relationships, which help him become the single most powerful man in the state."
+        },
+        {
+        	"m_id" : 4,
+        	"m_name" : "Kaabil",
+            "m_date" : ["09-02-2017","10-02-2017","11-02-2017"],
+        	"m_thumb" : "./images/kabil.jpg",
+        	"m_desc" : "Rohan, 31, is a dubbing artist. His days are spent in the studio, nights at home. In today's complex world, Rohan is a simple man with one dream -- to lead a normal life and in time, to find someone with whom he can build a happy home. His journey leads him to meet the independent and level-headed Supriya."
+        },
+        {
+            "m_id" : 5,
+            "m_name" : "Om Namo Venkatesaya",
+            "m_date" : ["10-02-2017","11-02-2017","12-02-2017","13-02-2017","14-02-2017"],
+            "m_thumb" : "./images/om_namo_v.jpg",
+            "m_desc" : "The film is a biography based on the life and times of Baba Hathiram, the 18th century devotee of Lord Venkateshwara."
+        },
+        {
+            "m_id" : 6,
+            "m_name" : "The Space Between Us",
+            "m_date" : ["10-02-2017","11-02-2017","12-02-2017","13-02-2017","14-02-2017"],
+            "m_thumb" : "./images/the_sbu.jpg",
+            "m_desc" : "Raised by scientists in Mars, a young man returns to Earth to find his father."
+        },
+        {
+            "m_id" : 7,
+            "m_name" : "Rings",
+            "m_date" : ["10-02-2017","11-02-2017","12-02-2017","13-02-2017","14-02-2017"],
+            "m_thumb" : "./images/rings.jpg",
+            "m_desc" : "A new chapter in the beloved RING horror franchise. A young woman becomes worried about her boyfriend when he explores a dark subculture surrounding a mysterious videotape said to kill the watcher seven days after he has viewed it."
+        },
+        {
+            "m_id" : 8,
+            "m_name" : "Resident Evil: The Final Chapter (3D)",
+            "m_date" : ["10-02-2017","11-02-2017","12-02-2017","13-02-2017","14-02-2017"],
+            "m_thumb" : "./images/res_evil.jpg",
+            "m_desc" : "Alice is the only survivor of what was meant to be humanitys final stand against the undead. Now, she must return to where the nightmare began The Hive in Raccoon City, where the Umbrella Corporation is gathering its forces for a final strike against the only remaining survivors of the apocalypse."
+        },
+        {
+            "m_id" : 9,
+            "m_name" : "Bogan",
+            "m_date" : ["10-02-2017","11-02-2017","12-02-2017","13-02-2017","14-02-2017"],
+            "m_thumb" : "./images/bogan.jpg",
+            "m_desc" : "Coming soon!"
+        },
+        {
+            "m_id" : 10,
+            "m_name" : "Nenu Local",
+            "m_date" : ["10-02-2017","11-02-2017","12-02-2017","13-02-2017","14-02-2017"],
+            "m_thumb" : "./images/nenu_local.jpg",
+            "m_desc" : "The story is about a happ-go-lucky young man, Babu who falls in love with a girl. However, he runs into a problem while convincing her father. How he solves the problem and gets together with the girl forms the crux of the story."
+        }
+    ]
+}

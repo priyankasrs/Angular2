@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<style>
+		.inner{
+			position: relative;
+			float: left;
+			height: 70px;
+			width: 20%;
+			text-align: left;
+			padding: 5%;
+			background-color: pink;
+		}
+		.myDiv{
+			width: 80%;
+			height: 105px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="myDiv">
+				    <div class="inner">
+				    	<h3>{{showTime.name}}</h3>
+						<h5>{{showTime.cinema}}</h5>
+				    </div>
+				    <div class="inner">
+				    	<h4>Date : {{showTime.date}}</h4>
+				    	<h5>Showtime : {{showTime.time}}</h5>
+				    </div>
+				    <div class="inner">
+
+				    	<h5>Price : {{showTime.price}}</h5>
+				    </div>
+	</div>
+</body>
+</html>

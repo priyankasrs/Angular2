@@ -1,0 +1,75 @@
+td {
+		  text-decoration: none;
+		  /*width: 21px;*/
+		  /*height: 21px;*/
+		  /*border-radius: 4px;*/
+		  padding: 6px;
+		  line-height: 31px;
+		  cursor: default;
+		}
+
+		td:hover,
+		td:focus {
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		td.selected {
+		  background: lightblue;
+		  color: white;
+		  border-radius: 4px;
+		}
+
+		td.available {
+		  color: black;
+		  /*border: 1px solid blue;*/
+		  /*font-size: 1px;*/
+
+		  border-radius: 4px;
+		  background-color: lightgreen;
+		  background-image: url('/images/chair.jpg');
+		  background-size: 100% 100%;
+		}
+
+		td.blocked {
+		  color: grey;
+		  /*border: 1px solid grey;*/
+		  border-radius: 4px;
+		}
+
+		td.available:hover {
+		  color: black;
+		  visibility: visible;
+		  background: lightyellow;
+		}
+
+		td.blocked,
+		td.blocked:hover {
+		  background: #eaeaea;
+		  color: #aaa;
+		  box-shadow: 0;
+		  cursor: default;
+		  border: 0;
+		}
+
+		table {
+		    border: 1px solid black;
+		    padding: 0.5em;
+		}
+
+		td{
+			margin: 2px;
+		    padding: 1em;
+		    border: 2px solid gray;
+		    padding: 6px;
+		  	line-height: 21px;
+		  	cursor: default;
+		  	background: white;
+		  	width: 40px;
+		  	height: 40px;
+		}
+
+		.seat{
+			height: 40px;
+			width: 40px;
+		}
