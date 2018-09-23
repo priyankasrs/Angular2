@@ -1,4 +1,4 @@
-# Web development project *BookYourShow* 
+# Web development project: *BookYourShow* 
 
 ###### Skillset used: *Angular JS, HTML, CSS, Bootstrap.*
 
